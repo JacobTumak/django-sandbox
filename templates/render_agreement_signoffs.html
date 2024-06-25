@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load signoff_tags %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ agreement.display }}</title>
+</head>
+<body>
+<div class="signoffs">
+    {% render_signoff agreement.creator_signoff %}
+</div>
+<br>
+<div class="signoffs ">
+    {% render_signoff agreement.licensee_signoff %}
+</div>
+</body>
+</html>

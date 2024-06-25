@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% load signoff_tags %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ subscription.display }}</title>
+</head>
+<body>
+<div class="signoffs">
+    {% render_signoff subscription.signoff.get %}
+</div>
+</body>
+</html>
